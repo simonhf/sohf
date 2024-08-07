@@ -1,5 +1,5 @@
 use strict;
-use Math::Prime::Util; # e.g. sudo apt install libmath-prime-util-perl
+use Math::Prime::Util;
 
 my $double_check_primes = 1;
 my @p;
@@ -9,7 +9,9 @@ my $npi = 0;
 my $h;
 my $p2pi;
 my $prime_candidate_last;
-my $n = 1_000_000;
+my $n = 100_000;
+my $p_f;
+my $f_eg;
 
 my @a;
 if($double_check_primes){
@@ -66,7 +68,41 @@ foreach my $n(1..$n){
 }
 my $p_lo = join(" ", @p[0..14]);
 my $p_hi = join(" ", @p[($#p-14)..($#p-0)]);
+printf qq[- %d integers on 6n +/- 1 between %d and %d\n], scalar(@np) + scalar(@p), 5, 6 * $n + 1;
+printf qq[- %d non-primes between %d and %d\n], scalar @np, 5, 6 * $n + 1;
 printf qq[- %d primes between %d and %d: %s .. %s\n], scalar @p, 5, 6 * $n + 1, $p_lo, $p_hi;
+
+printf qq[- show how prime factor lo used, e.g. 83854*6+1 = 503125 = 23x7x5x5x5x5x5 with 7 factors; 1 factor not shown for brevity:\n];
+my $f;
+foreach my $prime_factors_lo(sort {$a <=> $b} keys %{$p_f}){
+	if($prime_factors_lo < 200){
+		printf qq[- %9d prime lo factor used], $prime_factors_lo;
+	}
+	my $prime_factors_lo_t = 0;
+	foreach my $prime_factors_num(sort {$a <=> $b} keys %{$p_f->{$prime_factors_lo}}){
+		$prime_factors_lo_t += $p_f->{$prime_factors_lo}{$prime_factors_num}
+	}
+	if($prime_factors_lo < 200){
+		printf qq[ %6d total = 1 +], $prime_factors_lo_t;
+	}
+	foreach my $prime_factors_num(sort {$a <=> $b} keys %{$p_f->{$prime_factors_lo}}){
+		next if(1 == $prime_factors_num);
+		if($prime_factors_lo < 200){
+			printf qq[ %6d for %d factors], $p_f->{$prime_factors_lo}{$prime_factors_num}, $prime_factors_num;
+		}
+		$f->{$prime_factors_num} += $p_f->{$prime_factors_lo}{$prime_factors_num};
+	}
+	if($prime_factors_lo < 200){
+		printf qq[\n];
+	}
+}
+printf qq[- ...\n];
+my $ft = 0;
+foreach my $prime_factors_num(sort {$a <=> $b} keys %{$f}){
+	printf qq[- %6d occurrences for unique non-primes with %d factors, e.g. %s\n], $f->{$prime_factors_num}, $prime_factors_num, $f_eg->{$prime_factors_num};
+	$ft += $f->{$prime_factors_num};
+}
+printf qq[- %6d occurrences for unique non-primes with * factors\n], $ft;
 
 my $ai = 0;
 
@@ -75,7 +111,12 @@ sub is_prime{
 	my $prime_candidate = 6 * $n + $pom;
 	my @prime_factors = Math::Prime::Util::factor( $prime_candidate );
 	my @prime_factors_s = sort {$b <=> $a} @prime_factors;
+	my $prime_factors_s_x = join("x", @prime_factors_s);
 	my $prime_factors_hi = $prime_factors_s[0];
+	my $prime_factors_lo = $prime_factors_s[$#prime_factors_s];
+	my $prime_factors_num = scalar @prime_factors;
+	$f_eg->{$prime_factors_num} = sprintf qq[%d = %s], $prime_candidate, $prime_factors_s_x;
+	$p_f->{$prime_factors_lo}{$prime_factors_num} ++;
 	my $is_prime;
 	my $via_next;
 	if(exists $h->{$prime_candidate}){
@@ -124,7 +165,6 @@ sub is_prime{
 			exit;
 		}
 	}
-	my $prime_factors_s_x = join("x", @prime_factors_s);
 	printf qq[; [1] %s], $prime_factors_s_x;
 	printf qq[\n];
 

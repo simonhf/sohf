@@ -1,5 +1,5 @@
 use strict;
-use Math::Prime::Util;
+use Math::Prime::Util; # e.g. sudo apt install libmath-prime-util-perl
 
 my $double_check_primes = 1;
 my @p;
@@ -9,7 +9,7 @@ my $npi = 0;
 my $h;
 my $p2pi;
 my $prime_candidate_last;
-my $n = 100_000;
+my $n = 1_000_000;
 my $p_f;
 my $f_eg;
 
@@ -99,10 +99,10 @@ foreach my $prime_factors_lo(sort {$a <=> $b} keys %{$p_f}){
 printf qq[- ...\n];
 my $ft = 0;
 foreach my $prime_factors_num(sort {$a <=> $b} keys %{$f}){
-	printf qq[- %6d occurrences for unique non-primes with %d factors, e.g. %s\n], $f->{$prime_factors_num}, $prime_factors_num, $f_eg->{$prime_factors_num};
+	printf qq[- %7d occurrences for unique non-primes with %d factors, e.g. %s\n], $f->{$prime_factors_num}, $prime_factors_num, $f_eg->{$prime_factors_num};
 	$ft += $f->{$prime_factors_num};
 }
-printf qq[- %6d occurrences for unique non-primes with * factors\n], $ft;
+printf qq[- %7d occurrences for unique non-primes with * factors\n], $ft;
 
 my $ai = 0;
 

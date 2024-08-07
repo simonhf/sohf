@@ -156,63 +156,64 @@ $ perl sohf.pl
 ```
 
 ```
-- 200000 integers on 6n +/- 1 between 5 and 600001
-- 150904 non-primes between 5 and 600001
-- 49096 primes between 5 and 600001: 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 .. 599803 599831 599843 599857 599869 599891 599899 599927 599933 599939 599941 599959 599983 599993 599999
+- 2000000 integers on 6n +/- 1 between 5 and 6000001
+- 1587153 non-primes between 5 and 6000001
+- 412847 primes between 5 and 6000001: 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 .. 5999743 5999767 5999779 5999831 5999863 5999869 5999881 5999909 5999911 5999921 5999923 5999927 5999933 5999947 5999993
 - show how prime factor lo used, e.g. 83854*6+1 = 503125 = 23x7x5x5x5x5x5 with 7 factors; 1 factor not shown for brevity:
--         5 prime lo factor used  40000 total = 1 +  11299 for 2 factors  17585 for 3 factors   8691 for 4 factors   2089 for 5 factors    302 for 6 factors     31 for 7 factors      2 for 8 factors
--         7 prime lo factor used  22857 total = 1 +   8339 for 2 factors  10643 for 3 factors   3465 for 4 factors    392 for 5 factors     17 for 6 factors
--        11 prime lo factor used  12467 total = 1 +   5546 for 2 factors   5777 for 3 factors   1110 for 4 factors     33 for 5 factors
--        13 prime lo factor used   9590 total = 1 +   4770 for 2 factors   4297 for 3 factors    519 for 4 factors      3 for 5 factors
--        17 prime lo factor used   6769 total = 1 +   3754 for 2 factors   2838 for 3 factors    176 for 4 factors
--        19 prime lo factor used   5701 total = 1 +   3391 for 2 factors   2240 for 3 factors     69 for 4 factors
--        23 prime lo factor used   4464 total = 1 +   2859 for 2 factors   1591 for 3 factors     13 for 4 factors
--        29 prime lo factor used   3388 total = 1 +   2320 for 2 factors   1067 for 3 factors
--        31 prime lo factor used   3056 total = 1 +   2181 for 2 factors    874 for 3 factors
--        37 prime lo factor used   2471 total = 1 +   1872 for 2 factors    598 for 3 factors
--        41 prime lo factor used   2157 total = 1 +   1702 for 2 factors    454 for 3 factors
--        43 prime lo factor used   2002 total = 1 +   1635 for 2 factors    366 for 3 factors
--        47 prime lo factor used   1780 total = 1 +   1509 for 2 factors    270 for 3 factors
--        53 prime lo factor used   1537 total = 1 +   1353 for 2 factors    183 for 3 factors
--        59 prime lo factor used   1353 total = 1 +   1233 for 2 factors    119 for 3 factors
--        61 prime lo factor used   1284 total = 1 +   1196 for 2 factors     87 for 3 factors
--        67 prime lo factor used   1148 total = 1 +   1095 for 2 factors     52 for 3 factors
--        71 prime lo factor used   1071 total = 1 +   1038 for 2 factors     32 for 3 factors
--        73 prime lo factor used   1030 total = 1 +   1010 for 2 factors     19 for 3 factors
--        79 prime lo factor used    950 total = 1 +    944 for 2 factors      5 for 3 factors
--        83 prime lo factor used    903 total = 1 +    901 for 2 factors      1 for 3 factors
--        89 prime lo factor used    847 total = 1 +    846 for 2 factors
--        97 prime lo factor used    781 total = 1 +    780 for 2 factors
--       101 prime lo factor used    756 total = 1 +    755 for 2 factors
--       103 prime lo factor used    739 total = 1 +    738 for 2 factors
--       107 prime lo factor used    712 total = 1 +    711 for 2 factors
--       109 prime lo factor used    700 total = 1 +    699 for 2 factors
--       113 prime lo factor used    676 total = 1 +    675 for 2 factors
--       127 prime lo factor used    608 total = 1 +    607 for 2 factors
--       131 prime lo factor used    589 total = 1 +    588 for 2 factors
--       137 prime lo factor used    566 total = 1 +    565 for 2 factors
--       139 prime lo factor used    558 total = 1 +    557 for 2 factors
--       149 prime lo factor used    523 total = 1 +    522 for 2 factors
--       151 prime lo factor used    515 total = 1 +    514 for 2 factors
--       157 prime lo factor used    495 total = 1 +    494 for 2 factors
--       163 prime lo factor used    478 total = 1 +    477 for 2 factors
--       167 prime lo factor used    465 total = 1 +    464 for 2 factors
--       173 prime lo factor used    448 total = 1 +    447 for 2 factors
--       179 prime lo factor used    433 total = 1 +    432 for 2 factors
--       181 prime lo factor used    426 total = 1 +    425 for 2 factors
--       191 prime lo factor used    405 total = 1 +    404 for 2 factors
--       193 prime lo factor used    400 total = 1 +    399 for 2 factors
--       197 prime lo factor used    393 total = 1 +    392 for 2 factors
--       199 prime lo factor used    388 total = 1 +    387 for 2 factors
+-         5 prime lo factor used 400000 total = 1 +  92936 for 2 factors 166897 for 3 factors 102119 for 4 factors  31133 for 5 factors   5989 for 6 factors    831 for 7 factors     88 for 8 factors      6 for 9 factors
+-         7 prime lo factor used 228572 total = 1 +  68136 for 2 factors 104634 for 3 factors  46669 for 4 factors   8370 for 5 factors    727 for 6 factors     34 for 7 factors      1 for 8 factors
+-        11 prime lo factor used 124676 total = 1 +  44973 for 2 factors  59343 for 3 factors  18689 for 4 factors   1639 for 5 factors     31 for 6 factors
+-        13 prime lo factor used  95904 total = 1 +  38570 for 2 factors  45870 for 3 factors  10960 for 4 factors    502 for 5 factors      1 for 6 factors
+-        17 prime lo factor used  67697 total = 1 +  30204 for 2 factors  31954 for 3 factors   5452 for 4 factors     86 for 5 factors
+-        19 prime lo factor used  57009 total = 1 +  27251 for 2 factors  26436 for 3 factors   3305 for 4 factors     16 for 5 factors
+-        23 prime lo factor used  44611 total = 1 +  22895 for 2 factors  20047 for 3 factors   1668 for 4 factors
+-        29 prime lo factor used  33843 total = 1 +  18528 for 2 factors  14588 for 3 factors    726 for 4 factors
+-        31 prime lo factor used  30574 total = 1 +  17448 for 2 factors  12714 for 3 factors    411 for 4 factors
+-        37 prime lo factor used  24801 total = 1 +  14851 for 2 factors   9798 for 3 factors    151 for 4 factors
+-        41 prime lo factor used  21786 total = 1 +  13525 for 2 factors   8204 for 3 factors     56 for 4 factors
+-        43 prime lo factor used  20278 total = 1 +  12956 for 2 factors   7300 for 3 factors     21 for 4 factors
+-        47 prime lo factor used  18134 total = 1 +  11941 for 2 factors   6190 for 3 factors      2 for 4 factors
+-        53 prime lo factor used  15734 total = 1 +  10714 for 2 factors   5019 for 3 factors
+-        59 prime lo factor used  13853 total = 1 +   9722 for 2 factors   4130 for 3 factors
+-        61 prime lo factor used  13150 total = 1 +   9427 for 2 factors   3722 for 3 factors
+-        67 prime lo factor used  11747 total = 1 +   8653 for 2 factors   3093 for 3 factors
+-        71 prime lo factor used  10891 total = 1 +   8219 for 2 factors   2671 for 3 factors
+-        73 prime lo factor used  10417 total = 1 +   8016 for 2 factors   2400 for 3 factors
+-        79 prime lo factor used   9458 total = 1 +   7457 for 2 factors   2000 for 3 factors
+-        83 prime lo factor used   8861 total = 1 +   7134 for 2 factors   1726 for 3 factors
+-        89 prime lo factor used   8133 total = 1 +   6691 for 2 factors   1441 for 3 factors
+-        97 prime lo factor used   7349 total = 1 +   6195 for 2 factors   1153 for 3 factors
+-       101 prime lo factor used   6969 total = 1 +   5980 for 2 factors    988 for 3 factors
+-       103 prime lo factor used   6751 total = 1 +   5875 for 2 factors    875 for 3 factors
+-       107 prime lo factor used   6413 total = 1 +   5661 for 2 factors    751 for 3 factors
+-       109 prime lo factor used   6222 total = 1 +   5565 for 2 factors    656 for 3 factors
+-       113 prime lo factor used   5934 total = 1 +   5388 for 2 factors    545 for 3 factors
+-       127 prime lo factor used   5216 total = 1 +   4841 for 2 factors    374 for 3 factors
+-       131 prime lo factor used   5017 total = 1 +   4712 for 2 factors    304 for 3 factors
+-       137 prime lo factor used   4769 total = 1 +   4531 for 2 factors    237 for 3 factors
+-       139 prime lo factor used   4670 total = 1 +   4475 for 2 factors    194 for 3 factors
+-       149 prime lo factor used   4323 total = 1 +   4194 for 2 factors    128 for 3 factors
+-       151 prime lo factor used   4245 total = 1 +   4142 for 2 factors    102 for 3 factors
+-       157 prime lo factor used   4067 total = 1 +   3997 for 2 factors     69 for 3 factors
+-       163 prime lo factor used   3908 total = 1 +   3867 for 2 factors     40 for 3 factors
+-       167 prime lo factor used   3805 total = 1 +   3778 for 2 factors     26 for 3 factors
+-       173 prime lo factor used   3679 total = 1 +   3665 for 2 factors     13 for 3 factors
+-       179 prime lo factor used   3551 total = 1 +   3547 for 2 factors      3 for 3 factors
+-       181 prime lo factor used   3513 total = 1 +   3511 for 2 factors      1 for 3 factors
+-       191 prime lo factor used   3344 total = 1 +   3343 for 2 factors
+-       193 prime lo factor used   3307 total = 1 +   3306 for 2 factors
+-       197 prime lo factor used   3245 total = 1 +   3244 for 2 factors
+-       199 prime lo factor used   3217 total = 1 +   3216 for 2 factors
 - ...
--  84894 occurrences for unique non-primes with 2 factors, e.g. 599989 = 46153x13
--  49098 occurrences for unique non-primes with 3 factors, e.g. 600001 = 1373x23x19
--  14043 occurrences for unique non-primes with 4 factors, e.g. 599975 = 233x103x5x5
--   2517 occurrences for unique non-primes with 5 factors, e.g. 599725 = 149x23x7x5x5
--    319 occurrences for unique non-primes with 6 factors, e.g. 599375 = 137x7x5x5x5x5
--     31 occurrences for unique non-primes with 7 factors, e.g. 588245 = 7x7x7x7x7x7x5
--      2 occurrences for unique non-primes with 8 factors, e.g. 546875 = 7x5x5x5x5x5x5x5
-- 150904 occurrences for unique non-primes with * factors
+-  800834 occurrences for unique non-primes with 2 factors, e.g. 5999999 = 5923x1013
+-  546636 occurrences for unique non-primes with 3 factors, e.g. 6000001 = 122449x7x7
+-  190229 occurrences for unique non-primes with 4 factors, e.g. 5999987 = 449x83x23x7
+-   41746 occurrences for unique non-primes with 5 factors, e.g. 5999875 = 6857x7x5x5x5
+-    6748 occurrences for unique non-primes with 6 factors, e.g. 5999375 = 331x29x5x5x5x5
+-     865 occurrences for unique non-primes with 7 factors, e.g. 5996875 = 101x19x5x5x5x5x5
+-      89 occurrences for unique non-primes with 8 factors, e.g. 5890625 = 29x13x5x5x5x5x5x5
+-       6 occurrences for unique non-primes with 9 factors, e.g. 5359375 = 7x7x7x5x5x5x5x5x5
+- 1587153 occurrences for unique non-primes with * factors
 ```
 
 ```
@@ -228,36 +229,39 @@ $ perl sohf.pl | egrep "; \[1\] 5x"
 ```
 
 ```
-$ perl sohf.pl | egrep "of 7 factor"
--     13021*6-1 =     78125 IS NOT prime    np[18371];         5=hi of 7 factor(s) [1]:         390625=hi*[1] = (p[0]=5) x (np[18371]=78125) via (p[0]=5) x (np[3388]=15625); [1] 5x5x5x5x5x5x5
--     18229*6+1 =    109375 IS NOT prime    np[26062];         7=hi of 7 factor(s) [1]:         765625=hi*[1] = (p[1]=7) x (np[26062]=109375) via (p[1]=7) x (np[3388]=15625); [1] 7x5x5x5x5x5x5
--     25521*6-1 =    153125 IS NOT prime    np[36922];         7=hi of 7 factor(s) [1]:        1071875=hi*[1] = (p[1]=7) x (np[36922]=153125) via (p[1]=7) x (np[4838]=21875); [1] 7x7x5x5x5x5x5
--     28646*6-1 =    171875 IS NOT prime    np[41635];        11=hi of 7 factor(s) [1]:        1890625=hi*[1] = (p[2]=11) x (np[41635]=171875) via (p[2]=11) x (np[3388]=15625); [1] 11x5x5x5x5x5x5
--     33854*6+1 =    203125 IS NOT prime    np[49476];        13=hi of 7 factor(s) [1]:        2640625=hi*[1] = (p[3]=13) x (np[49476]=203125) via (p[3]=13) x (np[3388]=15625); [1] 13x5x5x5x5x5x5
--     35729*6+1 =    214375 IS NOT prime    np[52301];         7=hi of 7 factor(s) [1]:        1500625=hi*[1] = (p[1]=7) x (np[52301]=214375) via (p[1]=7) x (np[6907]=30625); [1] 7x7x7x5x5x5x5
--     40104*6+1 =    240625 IS NOT prime    np[58938];        11=hi of 7 factor(s) [1]:        2646875=hi*[1] = (p[2]=11) x (np[58938]=240625) via (p[2]=11) x (np[4838]=21875); [1] 11x7x5x5x5x5x5
--     44271*6-1 =    265625 IS NOT prime    np[65259];        17=hi of 7 factor(s) [1]:        4515625=hi*[1] = (p[4]=17) x (np[65259]=265625) via (p[4]=17) x (np[3388]=15625); [1] 17x5x5x5x5x5x5
--     47396*6-1 =    284375 IS NOT prime    np[70007];        13=hi of 7 factor(s) [1]:        3696875=hi*[1] = (p[3]=13) x (np[70007]=284375) via (p[3]=13) x (np[4838]=21875); [1] 13x7x5x5x5x5x5
--     49479*6+1 =    296875 IS NOT prime    np[73196];        19=hi of 7 factor(s) [1]:        5640625=hi*[1] = (p[5]=19) x (np[73196]=296875) via (p[5]=19) x (np[3388]=15625); [1] 19x5x5x5x5x5x5
--     50021*6-1 =    300125 IS NOT prime    np[74037];         7=hi of 7 factor(s) [1]:        2100875=hi*[1] = (p[1]=7) x (np[74037]=300125) via (p[1]=7) x (np[9809]=42875); [1] 7x7x7x7x5x5x5
--     56146*6-1 =    336875 IS NOT prime    np[83345];        11=hi of 7 factor(s) [1]:        3705625=hi*[1] = (p[2]=11) x (np[83345]=336875) via (p[2]=11) x (np[6907]=30625); [1] 11x7x7x5x5x5x5
--     59896*6-1 =    359375 IS NOT prime    np[89076];        23=hi of 7 factor(s) [1]:        8265625=hi*[1] = (p[6]=23) x (np[89076]=359375) via (p[6]=23) x (np[3388]=15625); [1] 23x5x5x5x5x5x5
--     61979*6+1 =    371875 IS NOT prime    np[92301];        17=hi of 7 factor(s) [1]:        6321875=hi*[1] = (p[4]=17) x (np[92301]=371875) via (p[4]=17) x (np[4838]=21875); [1] 17x7x5x5x5x5x5
--     63021*6-1 =    378125 IS NOT prime    np[93894];        11=hi of 7 factor(s) [1]:        4159375=hi*[1] = (p[2]=11) x (np[93894]=378125) via (p[2]=11) x (np[7785]=34375); [1] 11x11x5x5x5x5x5
--     66354*6+1 =    398125 IS NOT prime    np[98999];        13=hi of 7 factor(s) [1]:        5175625=hi*[1] = (p[3]=13) x (np[98999]=398125) via (p[3]=13) x (np[6907]=30625); [1] 13x7x7x5x5x5x5
--     69271*6-1 =    415625 IS NOT prime   np[103495];        19=hi of 7 factor(s) [1]:        7896875=hi*[1] = (p[5]=19) x (np[103495]=415625) via (p[5]=19) x (np[4838]=21875); [1] 19x7x5x5x5x5x5
--     70029*6+1 =    420175 IS NOT prime   np[104659];         7=hi of 7 factor(s) [1]:        2941225=hi*[1] = (p[1]=7) x (np[104659]=420175) via (p[1]=7) x (np[13950]=60025); [1] 7x7x7x7x7x5x5
--     74479*6+1 =    446875 IS NOT prime   np[111486];        13=hi of 7 factor(s) [1]:        5809375=hi*[1] = (p[3]=13) x (np[111486]=446875) via (p[3]=13) x (np[7785]=34375); [1] 13x11x5x5x5x5x5
--     75521*6-1 =    453125 IS NOT prime   np[113099];        29=hi of 7 factor(s) [1]:       13140625=hi*[1] = (p[7]=29) x (np[113099]=453125) via (p[7]=29) x (np[3388]=15625); [1] 29x5x5x5x5x5x5
--     78604*6+1 =    471625 IS NOT prime   np[117852];        11=hi of 7 factor(s) [1]:        5187875=hi*[1] = (p[2]=11) x (np[117852]=471625) via (p[2]=11) x (np[9809]=42875); [1] 11x7x7x7x5x5x5
--     80729*6+1 =    484375 IS NOT prime   np[121113];        31=hi of 7 factor(s) [1]:       15015625=hi*[1] = (p[8]=31) x (np[121113]=484375) via (p[8]=31) x (np[3388]=15625); [1] 31x5x5x5x5x5x5
--     83854*6+1 =    503125 IS NOT prime   np[125945];        23=hi of 7 factor(s) [1]:       11571875=hi*[1] = (p[6]=23) x (np[125945]=503125) via (p[6]=23) x (np[4838]=21875); [1] 23x7x5x5x5x5x5
--     86771*6-1 =    520625 IS NOT prime   np[130435];        17=hi of 7 factor(s) [1]:        8850625=hi*[1] = (p[4]=17) x (np[130435]=520625) via (p[4]=17) x (np[6907]=30625); [1] 17x7x7x5x5x5x5
--     88021*6-1 =    528125 IS NOT prime   np[132357];        13=hi of 7 factor(s) [1]:        6865625=hi*[1] = (p[3]=13) x (np[132357]=528125) via (p[3]=13) x (np[9285]=40625); [1] 13x13x5x5x5x5x5
--     88229*6+1 =    529375 IS NOT prime   np[132680];        11=hi of 7 factor(s) [1]:        5823125=hi*[1] = (p[2]=11) x (np[132680]=529375) via (p[2]=11) x (np[11086]=48125); [1] 11x11x7x5x5x5x5
--     92896*6-1 =    557375 IS NOT prime   np[139914];        13=hi of 7 factor(s) [1]:        7245875=hi*[1] = (p[3]=13) x (np[139914]=557375) via (p[3]=13) x (np[9809]=42875); [1] 13x7x7x7x5x5x5
--     96354*6+1 =    578125 IS NOT prime   np[145266];        37=hi of 7 factor(s) [1]:       21390625=hi*[1] = (p[9]=37) x (np[145266]=578125) via (p[9]=37) x (np[3388]=15625); [1] 37x5x5x5x5x5x5
--     96979*6+1 =    581875 IS NOT prime   np[146227];        19=hi of 7 factor(s) [1]:       11055625=hi*[1] = (p[5]=19) x (np[146227]=581875) via (p[5]=19) x (np[6907]=30625); [1] 19x7x7x5x5x5x5
--     97396*6-1 =    584375 IS NOT prime   np[146880];        17=hi of 7 factor(s) [1]:        9934375=hi*[1] = (p[4]=17) x (np[146880]=584375) via (p[4]=17) x (np[7785]=34375); [1] 17x11x5x5x5x5x5
--     98041*6-1 =    588245 IS NOT prime   np[147851];         7=hi of 7 factor(s) [1]:        4117715=hi*[1] = (p[1]=7) x (np[147851]=588245) via (p[1]=7) x (np[19820]=84035); [1] 7x7x7x7x7x7x5
+$ perl sohf.pl | egrep "of 7 factor.*x7$" | nl
+     1	-    137257*6+1 =    823543 IS NOT prime   np[208830];         7=hi of 7 factor(s) [1]:        5764801=hi*[1] = (p[1]=7) x (np[208830]=823543) via (p[1]=7) x (np[28119]=117649); [1] 7x7x7x7x7x7x7
+     2	-    215690*6-1 =   1294139 IS NOT prime   np[331764];        11=hi of 7 factor(s) [1]:       14235529=hi*[1] = (p[2]=11) x (np[331764]=1294139) via (p[2]=11) x (np[28119]=117649); [1] 11x7x7x7x7x7x7
+     3	-    254906*6+1 =   1529437 IS NOT prime   np[393574];        13=hi of 7 factor(s) [1]:       19882681=hi*[1] = (p[3]=13) x (np[393574]=1529437) via (p[3]=13) x (np[28119]=117649); [1] 13x7x7x7x7x7x7
+     4	-    333339*6-1 =   2000033 IS NOT prime   np[517743];        17=hi of 7 factor(s) [1]:       34000561=hi*[1] = (p[4]=17) x (np[517743]=2000033) via (p[4]=17) x (np[28119]=117649); [1] 17x7x7x7x7x7x7
+     5	-    338941*6+1 =   2033647 IS NOT prime   np[526601];        11=hi of 7 factor(s) [1]:       22370117=hi*[1] = (p[2]=11) x (np[526601]=2033647) via (p[2]=11) x (np[44892]=184877); [1] 11x11x7x7x7x7x7
+     6	-    372555*6+1 =   2235331 IS NOT prime   np[580026];        19=hi of 7 factor(s) [1]:       42471289=hi*[1] = (p[5]=19) x (np[580026]=2235331) via (p[5]=19) x (np[28119]=117649); [1] 19x7x7x7x7x7x7
+     7	-    400567*6-1 =   2403401 IS NOT prime   np[624608];        13=hi of 7 factor(s) [1]:       31244213=hi*[1] = (p[3]=13) x (np[624608]=2403401) via (p[3]=13) x (np[44892]=184877); [1] 13x11x7x7x7x7x7
+     8	-    450988*6-1 =   2705927 IS NOT prime   np[704933];        23=hi of 7 factor(s) [1]:       62236321=hi*[1] = (p[6]=23) x (np[704933]=2705927) via (p[6]=23) x (np[28119]=117649); [1] 23x7x7x7x7x7x7
+     9	-    473397*6+1 =   2840383 IS NOT prime   np[740648];        13=hi of 7 factor(s) [1]:       36924979=hi*[1] = (p[3]=13) x (np[740648]=2840383) via (p[3]=13) x (np[53350]=218491); [1] 13x13x7x7x7x7x7
+    10	-    523818*6+1 =   3142909 IS NOT prime   np[821271];        17=hi of 7 factor(s) [1]:       53429453=hi*[1] = (p[4]=17) x (np[821271]=3142909) via (p[4]=17) x (np[44892]=184877); [1] 17x11x7x7x7x7x7
+    11	-    532622*6-1 =   3195731 IS NOT prime   np[835328];        11=hi of 7 factor(s) [1]:       35153041=hi*[1] = (p[2]=11) x (np[835328]=3195731) via (p[2]=11) x (np[71574]=290521); [1] 11x11x11x7x7x7x7
+    12	-    568637*6-1 =   3411821 IS NOT prime   np[892927];        29=hi of 7 factor(s) [1]:       98942809=hi*[1] = (p[7]=29) x (np[892927]=3411821) via (p[7]=29) x (np[28119]=117649); [1] 29x7x7x7x7x7x7
+    13	-    585444*6-1 =   3512663 IS NOT prime   np[919903];        19=hi of 7 factor(s) [1]:       66740597=hi*[1] = (p[5]=19) x (np[919903]=3512663) via (p[5]=19) x (np[44892]=184877); [1] 19x11x7x7x7x7x7
+    14	-    607853*6+1 =   3647119 IS NOT prime   np[955817];        31=hi of 7 factor(s) [1]:      113060689=hi*[1] = (p[8]=31) x (np[955817]=3647119) via (p[8]=31) x (np[28119]=117649); [1] 31x7x7x7x7x7x7
+    15	-    619058*6-1 =   3714347 IS NOT prime   np[973776];        17=hi of 7 factor(s) [1]:       63143899=hi*[1] = (p[4]=17) x (np[973776]=3714347) via (p[4]=17) x (np[53350]=218491); [1] 17x13x7x7x7x7x7
+    16	-    629462*6+1 =   3776773 IS NOT prime   np[990472];        13=hi of 7 factor(s) [1]:       49098049=hi*[1] = (p[3]=13) x (np[990472]=3776773) via (p[3]=13) x (np[71574]=290521); [1] 13x11x11x7x7x7x7
+    17	-    691888*6+1 =   4151329 IS NOT prime  np[1090674];        19=hi of 7 factor(s) [1]:       78875251=hi*[1] = (p[5]=19) x (np[1090674]=4151329) via (p[5]=19) x (np[53350]=218491); [1] 19x13x7x7x7x7x7
+    18	-    708695*6+1 =   4252171 IS NOT prime  np[1117657];        23=hi of 7 factor(s) [1]:       97799933=hi*[1] = (p[6]=23) x (np[1117657]=4252171) via (p[6]=23) x (np[44892]=184877); [1] 23x11x7x7x7x7x7
+    19	-    725502*6+1 =   4353013 IS NOT prime  np[1144728];        37=hi of 7 factor(s) [1]:      161061481=hi*[1] = (p[9]=37) x (np[1144728]=4353013) via (p[9]=37) x (np[28119]=117649); [1] 37x7x7x7x7x7x7
+    20	-    743910*6-1 =   4463459 IS NOT prime  np[1174266];        13=hi of 7 factor(s) [1]:       58024967=hi*[1] = (p[3]=13) x (np[1174266]=4463459) via (p[3]=13) x (np[84999]=343343); [1] 13x13x11x7x7x7x7
+    21	-    803935*6-1 =   4823609 IS NOT prime  np[1270885];        41=hi of 7 factor(s) [1]:      197767969=hi*[1] = (p[10]=41) x (np[1270885]=4823609) via (p[10]=41) x (np[28119]=117649); [1] 41x7x7x7x7x7x7
+    22	-    809537*6+1 =   4857223 IS NOT prime  np[1279915];        17=hi of 7 factor(s) [1]:       82572791=hi*[1] = (p[4]=17) x (np[1279915]=4857223) via (p[4]=17) x (np[70340]=285719); [1] 17x17x7x7x7x7x7
+    23	-    823143*6-1 =   4938857 IS NOT prime  np[1301776];        17=hi of 7 factor(s) [1]:       83960569=hi*[1] = (p[4]=17) x (np[1301776]=4938857) via (p[4]=17) x (np[71574]=290521); [1] 17x11x11x7x7x7x7
+    24	-    836977*6+1 =   5021863 IS NOT prime  np[1324038];        11=hi of 7 factor(s) [1]:       55240493=hi*[1] = (p[2]=11) x (np[1324038]=5021863) via (p[2]=11) x (np[113977]=456533); [1] 11x11x11x11x7x7x7
+    25	-    837549*6-1 =   5025293 IS NOT prime  np[1324963];        23=hi of 7 factor(s) [1]:      115581739=hi*[1] = (p[6]=23) x (np[1324963]=5025293) via (p[6]=23) x (np[53350]=218491); [1] 23x13x7x7x7x7x7
+    26	-    843151*6+1 =   5058907 IS NOT prime  np[1333983];        43=hi of 7 factor(s) [1]:      217533001=hi*[1] = (p[11]=43) x (np[1333983]=5058907) via (p[11]=43) x (np[28119]=117649); [1] 43x7x7x7x7x7x7
+    27	-    879166*6+1 =   5274997 IS NOT prime  np[1392029];        13=hi of 7 factor(s) [1]:       68574961=hi*[1] = (p[3]=13) x (np[1392029]=5274997) via (p[3]=13) x (np[100971]=405769); [1] 13x13x13x7x7x7x7
+    28	-    893572*6+1 =   5361433 IS NOT prime  np[1415270];        29=hi of 7 factor(s) [1]:      155481557=hi*[1] = (p[7]=29) x (np[1415270]=5361433) via (p[7]=29) x (np[44892]=184877); [1] 29x11x7x7x7x7x7
+    29	-    904777*6-1 =   5428661 IS NOT prime  np[1433352];        19=hi of 7 factor(s) [1]:      103144559=hi*[1] = (p[5]=19) x (np[1433352]=5428661) via (p[5]=19) x (np[70340]=285719); [1] 19x17x7x7x7x7x7
+    30	-    919983*6+1 =   5519899 IS NOT prime  np[1457910];        19=hi of 7 factor(s) [1]:      104878081=hi*[1] = (p[5]=19) x (np[1457910]=5519899) via (p[5]=19) x (np[71574]=290521); [1] 19x11x11x7x7x7x7
+    31	-    921584*6-1 =   5529503 IS NOT prime  np[1460509];        47=hi of 7 factor(s) [1]:      259886641=hi*[1] = (p[12]=47) x (np[1460509]=5529503) via (p[12]=47) x (np[28119]=117649); [1] 47x7x7x7x7x7x7
+    32	-    955198*6-1 =   5731187 IS NOT prime  np[1514776];        31=hi of 7 factor(s) [1]:      177666797=hi*[1] = (p[8]=31) x (np[1514776]=5731187) via (p[8]=31) x (np[44892]=184877); [1] 31x11x7x7x7x7x7
+    33	-    972805*6+1 =   5836831 IS NOT prime  np[1543262];        17=hi of 7 factor(s) [1]:       99226127=hi*[1] = (p[4]=17) x (np[1543262]=5836831) via (p[4]=17) x (np[84999]=343343); [1] 17x13x11x7x7x7x7
+    34	-    989155*6-1 =   5934929 IS NOT prime  np[1569598];        13=hi of 7 factor(s) [1]:       77154077=hi*[1] = (p[3]=13) x (np[1569598]=5934929) via (p[3]=13) x (np[113977]=456533); [1] 13x11x11x11x7x7x7
 ```
